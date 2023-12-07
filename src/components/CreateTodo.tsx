@@ -36,9 +36,19 @@ export default function CreateTodo({todos, setTodos}: ICreateTodoProps) {
   return (
     <>
     <Form onSubmit={(e) => handleSubmit(e)}>
-        <Form.Group className='m-3' controlId='formBasicTitle'>
-            <Form.Control type='text' placeholder='type' ref={titleRef}/>
-            <Button type='submit' variant='dark' size='sm'>+ New</Button>
+        <Form.Group className='m-3 text-center' controlId='formBasicTitle'>
+            <Form.Control 
+                type='text' 
+                placeholder='Add new todo here..' 
+                style={{borderRadius: '100px', background: '#f0f0f0'}}
+                ref={titleRef}/>
+            <Button 
+                type='submit' 
+                variant='flat' 
+                size='lg'
+                className='mt-2 rounded-circle'
+                style={{fontSize: 'large'}}
+            >+</Button>
         </Form.Group>
     </Form>
     </>

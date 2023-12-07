@@ -40,7 +40,7 @@ export default function TodosList({todos, setTodos}: ITodosListProps) {
 
   return (
     <>
-    <h3 className='m-3'>Today</h3>
+    <p className='ms-3 mb-0 fw-bold'>TODAY</p>
     <div>{renderNotes()}</div>
     </>
   )

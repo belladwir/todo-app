@@ -27,6 +27,23 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <style type="text/css">
+          {`
+            .btn-flat {
+              background-color: #368f8b;
+              color: white;
+            }
+            .form-check-input[type=checkbox] {
+              border-radius: 100% !important;
+              border: solid 1px #368f8b;
+            }
+            .form-check-input:checked {
+              background-color: #368f8b;
+              border-color: #368f8b;
+          }
+        `}
+      </style>
     </>
   );
 }
